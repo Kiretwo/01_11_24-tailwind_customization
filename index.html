@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Showcase</title>
+    <script src="toggle.js" defer></script>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-softWhite font-sans text-darkCharcoal dark:bg-darkCharcoal dark:text-softWhite">
+    <!-- Header -->
+    <header class="flex items-center justify-between bg-primaryTeal p-4 dark:bg-tealDark">
+      <div class="font-serif text-2xl font-bold text-softWhite">Logo</div>
+      <button id="theme-toggle" class="text-softWhite">Toggle Theme</button>
+      <nav class="space-x-4">
+        <a href="#" class="text-softWhite hover:text-tealLight">Home</a>
+        <a href="#" class="text-softWhite hover:text-tealLight">About</a>
+        <a href="#" class="text-softWhite hover:text-tealLight">Products</a>
+        <a href="#" class="text-softWhite hover:text-tealLight">Contact</a>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative flex h-80 items-center justify-center bg-primaryTeal text-center dark:bg-tealDark">
+      <div class="absolute inset-0 bg-tealDark opacity-50 dark:bg-primaryTeal dark:opacity-60"></div>
+      <div class="relative z-10">
+        <h1 class="font-serif text-4xl font-bold text-softWhite">Welcome to Our Product Showcase</h1>
+        <p class="mt-4 text-softWhite">Discover our exclusive range of products</p>
+        <button class="mt-6 rounded bg-complementaryCoral px-6 py-2 text-softWhite dark:bg-coralDark">Shop Now</button>
+      </div>
+    </section>
+    <!-- Products Section -->
+    <section class="grid grid-cols-1 gap-8 p-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="dark:bg-warmGray-dark rounded bg-softWhite p-4 shadow">
+        <h2 class="font-serif text-lg font-bold text-darkCharcoal dark:text-softWhite">Product 1</h2>
+        <p class="dark:text-primaryTeal-dark mt-2 text-primaryTeal">Product description here.</p>
+        <button class="dark:bg-complementaryCoral-dark mt-4 rounded bg-complementaryCoral px-4 py-2 text-softWhite">
+          View Details
+        </button>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primaryTeal p-4 text-center font-serif text-softWhite dark:bg-tealDark">
+      &copy; 2024 Your Company. All rights reserved.
+    </footer>
+  </body>
+</html>
